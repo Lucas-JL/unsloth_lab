@@ -15,6 +15,7 @@ model, tokenizer = FastLanguageModel.from_pretrained(
     full_finetuning = False, # Use for full fine-tuning.
     trust_remote_code = False, # Enable to support new models
     # token = "hf_...", # use one if using gated models
+    cache_dir="/root/workspace/models",# Cache dir for HuggingFace models (optional
 )
 
 # Do model patching and add fast LoRA weights
